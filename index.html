@@ -32,20 +32,25 @@
               width: 100%;
               align-items: center;
               border: 1px solid rgb(198, 198, 198);
+    
             }
 
         .card:hover {
             opacity: 1;
+
 
         }
         .card img {
             display: block;
             width: 100%;
             opacity: 0;
+            transform: scaleX(0);
             transition: 0.5s;
         }
         .card:hover img {
             opacity: 1;
+            transform: scaleX(1);
+            animation-duration: 1S;
         }
         body {
             background-color:#7e7e7e;
